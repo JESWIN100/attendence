@@ -77,7 +77,7 @@ function App() {
 
   const markAttendance = async (studentId) => {
     try {
-      const res = await axios.post("/attendence-backend-bice.vercel.app/api/attendance/mark", { studentId });
+      const res = await axios.post("https://attendence-backend-bice.vercel.app/api/attendance/mark", { studentId });
       setStatus(res.data.message || "Attendance marked successfully! 🎉");
      
     } catch (err) {
