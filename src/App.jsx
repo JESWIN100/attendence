@@ -74,7 +74,8 @@ function App() {
       }
     );
   };
-
+  //
+//http://localhost:3032
   const markAttendance = async (studentId) => {
     try {
       const res = await axios.post("https://attendence-backend-bice.vercel.app/api/attendance/mark", { studentId });
